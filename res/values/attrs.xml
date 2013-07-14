@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <declare-styleable name="CustomWebView">
-        <attr name="buttonNum" format="integer" />
-        <attr name="itemBackground" format="reference|color" />
+        <attr name="type" format="enum" >
+            <enum name="notfound" value="0" />
+            <enum name="qq" value="1" />
+            <enum name="qq_wide" value="2" />
+            <enum name="qq_narrow" value="3" />
+            <enum name="yibo" value="4" />
+        </attr>
+        
+        <attr name="script" format="string"></attr>
     </declare-styleable>
 </resources>
