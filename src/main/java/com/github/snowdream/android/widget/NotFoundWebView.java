@@ -18,10 +18,8 @@ package com.github.snowdream.android.widget;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.text.Html;
-import android.text.TextUtils;
+import android.content.res.TypedArray;
 import android.util.AttributeSet;
-import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
@@ -63,8 +61,19 @@ public class NotFoundWebView extends WebView {
 
 	@SuppressLint("SetJavaScriptEnabled")
 	private void init(Context context, AttributeSet attrs, int defStyle) {
+		// enable JavaScript
 		WebSettings settings = this.getSettings();
 		settings.setJavaScriptEnabled(true);
+
+		// init attrs
+		TypedArray a = getContext().obtainStyledAttributes(attrs,
+				R.styleable.CustomWebView);
+
+		try {
+			a.getString(R.styleable.CustomWebView_type);
+		} finally {
+			a.recycle();
+		}
 	}
 
 	public void showNotFoundPage() {
@@ -73,7 +82,7 @@ public class NotFoundWebView extends WebView {
 	}
 
 	private String getNotFoundPageHtml() {
-		String body ="";
+		String body = "";
 
 		return HtmlUtil.getHtml(body);
 	}
