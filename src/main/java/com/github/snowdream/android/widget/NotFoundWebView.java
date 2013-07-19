@@ -171,7 +171,7 @@ public class NotFoundWebView extends WebView {
 		@SuppressWarnings("unchecked")
 		@Override
 		protected Void doInBackground(Object... params) {
-			if (params == null || params.length < 2) {
+			if (params == null || params.length < 1) {
 				return null;
 			}
 			String url = null;

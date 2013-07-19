@@ -25,7 +25,7 @@ package com.github.snowdream.android.widget;
  * @version v1.0
  */
 public class HtmlUtil {
-	private static final String HTML_HEAD = "<html><head><title>Not Found!</titile></head><body>";
+	private static final String HTML_HEAD = "<html><head><title>Not Found!</title></head><body  style=\"word-break:break-all\">";
 	private static final String HTML_FOOTER = "</body></html>";
 	
 	/**
