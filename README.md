@@ -3,6 +3,8 @@
 ##Introduction
 Thousands of children go missing every year all over the world. Thanks to the notfound-webview project, you can make a difference.When you use webview,if you get an error 404,then you can show the information to help finding the missing children.
 
+##Screenshots
+![preview.png](preview.png "notfound-webview")
 
 ##Download
 Download [the latest jar][1] or grab via Maven:
@@ -11,9 +13,27 @@ Download [the latest jar][1] or grab via Maven:
 <dependency>
   <groupId>com.github.snowdream.android.widget</groupId>
   <artifactId>notfound-webview</artifactId>
-  <version>0.0.1</version>
+  <version>1.0</version>
   <type>apklib</type>
 </dependency>
+```
+
+##Usage
+Import the library with maven,Then define your custom webview widget in the layout file(like activity_main.xml).
+```xml
+<com.github.snowdream.android.widget.NotFoundWebView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/webview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:type="qq" />
+```
+Then in the activity,load the url address as usual.If you get an error 404,Then the webview will show show the information to help finding the missing children.
+
+```java
+NotFoundWebView webView = (NotFoundWebView)findViewById(R.id.webview);
+webView.setWebViewClient(new WebViewClient());
+webView.loadUrl("http://www.checkupdown.com/InvalidPage.html");
 ```
 
 ##License
