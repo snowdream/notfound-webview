@@ -13,7 +13,7 @@ Download [the latest jar][1] or grab via Maven:
 <dependency>
   <groupId>com.github.snowdream.android.widget</groupId>
   <artifactId>notfound-webview</artifactId>
-  <version>1.0</version>
+  <version>0.0.1</version>
   <type>apklib</type>
 </dependency>
 ```
