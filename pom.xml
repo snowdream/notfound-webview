@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>com.github.snowdream.android</groupId>
 		<artifactId>parent</artifactId>
-		<version>0.0.2</version>
+		<version>0.0.4</version>
 	</parent>
 	<groupId>com.github.snowdream.android.widget</groupId>
 	<artifactId>notfound-webview</artifactId>
