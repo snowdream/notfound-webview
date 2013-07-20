@@ -7,13 +7,13 @@ Thousands of children go missing every year all over the world. Thanks to the no
 ![preview.png](preview.png "notfound-webview")
 
 ##Download
-Download [the latest jar][1] or grab via Maven:
+Download [the latest apklib][1] or grab via Maven:
 
 ```xml
 <dependency>
   <groupId>com.github.snowdream.android.widget</groupId>
   <artifactId>notfound-webview</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <type>apklib</type>
 </dependency>
 ```
@@ -28,6 +28,13 @@ Import the library with maven,Then define your custom webview widget in the layo
     android:layout_height="match_parent"
     app:type="qq" />
 ```
+app:type can select the following values:  
+[notfound][2]  
+[qq][3]    
+[qq_wide][3]    
+[qq_narrow][3]    
+[yibo][4]    
+
 Then in the activity,load the url address as usual.If you get an error 404,Then the webview will show show the information to help finding the missing children.
 
 ```java
@@ -53,4 +60,7 @@ webView.loadUrl("http://www.checkupdown.com/InvalidPage.html");
  limitations under the License.
 ```
 
-[1]:https://oss.sonatype.org/content/groups/public/com/github/snowdream/android/widget/notfound-webview/0.0.1/notfound-webview-0.0.1.jar
+[1]:https://oss.sonatype.org/content/groups/public/com/github/snowdream/android/widget/notfound-webview/0.0.2/notfound-webview-0.0.2.apklib
+[2]:http://notfound.org/
+[3]:http://www.qq.com/404/
+[4]:http://yibo.iyiyun.com/

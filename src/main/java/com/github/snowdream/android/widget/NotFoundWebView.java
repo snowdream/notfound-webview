@@ -32,6 +32,7 @@ import android.os.AsyncTask;
 import android.util.AttributeSet;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebSettings.ZoomDensity;
 
 /**
  * A Webview when 404 errors occour,will show the public service advertisement.
@@ -70,7 +71,9 @@ public class NotFoundWebView extends WebView {
 		init(context, null, 0);
 	}
 
-	@SuppressLint("SetJavaScriptEnabled")
+	@SuppressLint({
+            "SetJavaScriptEnabled", "NewApi"
+    })
 	private void init(Context context, AttributeSet attrs, int defStyle) {
 		if (context == null) {
 			return;
@@ -79,7 +82,15 @@ public class NotFoundWebView extends WebView {
 		// enable JavaScript
 		WebSettings settings = this.getSettings();
 		settings.setJavaScriptEnabled(true);
+        
+        settings.setSupportZoom(true);
+        settings.setBuiltInZoomControls(true);
+        settings.setLoadWithOverviewMode(true);
+        settings.setDefaultZoom(ZoomDensity.FAR);
 
+        //settings.setUseWideViewPort(true);
+        //webView.setInitialScale(1);
+        
 		// init attrs
 		TypedArray a = getContext().obtainStyledAttributes(attrs,
 				R.styleable.CustomWebView);
