@@ -59,6 +59,7 @@ webView.loadUrl("http://www.checkupdown.com/InvalidPage.html");
  See the License for the specific language governing permissions and
  limitations under the License.
 ```
+[![Build Status](https://travis-ci.org/snowdream/notfound-webview.png?branch=master)](https://travis-ci.org/snowdream/notfound-webview)
 
 [1]:https://oss.sonatype.org/content/groups/public/com/github/snowdream/android/widget/notfound-webview/0.0.2/notfound-webview-0.0.2.apklib
 [2]:http://notfound.org/
