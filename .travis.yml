@@ -26,7 +26,4 @@ before_install:
   # you are building for android (run "android list sdk" to get the full list.  9 = 2.3.3 or API level 10
   - android update sdk --filter platform-tools,android-17 --no-ui --force > /dev/null
   
-install:
-  mvn test
-  
 script: echo Finish
