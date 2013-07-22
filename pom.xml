@@ -22,6 +22,22 @@
 		<system>Github</system>
 		<url>https://github.com/snowdream/notfound-webview/issues</url>
 	</issueManagement>
+	<ciManagement>
+		<system>travis-ci</system>
+		<url>https://travis-ci.org/snowdream/notfound-webview</url>
+		<notifiers>
+			<notifier>
+				<type>mail</type>
+				<sendOnError>true</sendOnError>
+				<sendOnFailure>true</sendOnFailure>
+				<sendOnSuccess>false</sendOnSuccess>
+				<sendOnWarning>false</sendOnWarning>
+				<configuration>
+					<address>yanghui1986527@gmail.com</address>
+				</configuration>
+			</notifier>
+		</notifiers>
+	</ciManagement>
 	<dependencies>
 		<dependency>
 			<groupId>com.google.android</groupId>
