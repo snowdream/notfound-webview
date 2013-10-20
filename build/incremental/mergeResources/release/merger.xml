@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/home/snowdream/workspace/git/notfound-webview/res" >
+            <file
+                path="/home/snowdream/workspace/git/notfound-webview/res/values/strings.xml"
+                qualifiers="" >
+                <string name="html_yibo" ><![CDATA[<script type="text/javascript">var yibo_id="58552";</script><script src="http://yibo.iyiyun.com/yibo.js" type="text/javascript"></script>]]></string>
+                <string name="html_qq_wide" ><![CDATA[<script type="text/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8"></script>]]></string>
+                <string name="html_notfound" ><![CDATA[<iframe src="http://notfound-static.fwebservices.be/404/index.html?&amp;key=882fa63ebdaed497af18764d9fd841ee" width="100%" height="650" frameborder="0"></iframe>]]></string>
+                <string name="html_qq_narrow" ><![CDATA[<script type="text/javascript" src="http://www.qq.com/404/search_children.js?edition=small" charset="utf-8"></script>]]></string>
+            </file>
+            <file
+                path="/home/snowdream/workspace/git/notfound-webview/res/values/attrs.xml"
+                qualifiers="" >
+                <declare-styleable name="CustomWebView" >
+                    <attr
+                        name="type"
+                        format="enum" >
+                        <enum
+                            name="notfound"
+                            value="0" />
+                        <enum
+                            name="qq"
+                            value="1" />
+                        <enum
+                            name="qq_wide"
+                            value="2" />
+                        <enum
+                            name="qq_narrow"
+                            value="3" />
+                        <enum
+                            name="yibo"
+                            value="4" />
+                    </attr>
+                    <attr
+                        name="script"
+                        format="string" />
+                </declare-styleable>
+            </file>
+        </source>
+        <source path="/home/snowdream/workspace/git/notfound-webview/build/res/rs/release" />
+    </dataSet>
+    <dataSet config="release" >
+        <source path="/home/snowdream/workspace/git/notfound-webview/src/release/res" />
+    </dataSet>
+
+</merger>

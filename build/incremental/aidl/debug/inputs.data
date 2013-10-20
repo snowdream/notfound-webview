@@ -1,0 +1,5 @@
+# incremental data. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1374338903000 5528 d488dae43b6c56e55aa96b41d4f6142c41ea8800 /home/snowdream/workspace/git/notfound-webview/src/main/java/com/github/snowdream/android/widget/NotFoundWebView.java
+1374314925000 1483 ab80556da30158b314bb1148d0a16d94c2aff7a6 /home/snowdream/workspace/git/notfound-webview/src/main/java/com/github/snowdream/android/widget/HtmlUtil.java

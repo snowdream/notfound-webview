@@ -7,14 +7,14 @@ Thousands of children go missing every year all over the world. Thanks to the no
 ![preview.png](preview.png "notfound-webview")
 
 ##Download
-Download [the latest apklib][1] or grab via Maven:
+Download [the latest aar][1] or grab via Maven:
 
 ```xml
 <dependency>
   <groupId>com.github.snowdream.android.widget</groupId>
   <artifactId>notfound-webview</artifactId>
-  <version>0.0.2</version>
-  <type>apklib</type>
+  <version>0.0.3</version>
+  <type>aar</type>
 </dependency>
 ```
 
@@ -61,7 +61,7 @@ webView.loadUrl("http://www.checkupdown.com/InvalidPage.html");
 ```
 [![Build Status](https://travis-ci.org/snowdream/notfound-webview.png?branch=master)](https://travis-ci.org/snowdream/notfound-webview)
 
-[1]:https://oss.sonatype.org/content/groups/public/com/github/snowdream/android/widget/notfound-webview/0.0.2/notfound-webview-0.0.2.apklib
+[1]:https://oss.sonatype.org/content/groups/public/com/github/snowdream/android/widget/notfound-webview/0.0.3/notfound-webview-0.0.3.aar
 [2]:http://notfound.org/
 [3]:http://www.qq.com/404/
 [4]:http://yibo.iyiyun.com/
